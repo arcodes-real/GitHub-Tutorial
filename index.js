@@ -9,6 +9,15 @@ let students = [
     
 ]
 
-const student = students.map((stud) => {return (stud.name)});
-const studentNameInCaps = student.map((item)=>{return item.toUpperCase()});
-console.log(studentNameInCaps);
+// using .map()
+
+const names = students.map((student) => {return (student.name.toUpperCase())});
+console.log(names);
+
+// using for loop
+
+// const names = [];
+// for(let i = 0; i<students.length; i++){
+//     names.push(students[i].name.toUpperCase());
+// }
+// console.log(names);
